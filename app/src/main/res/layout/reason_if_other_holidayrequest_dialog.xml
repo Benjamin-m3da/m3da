@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/Other_reason_tv"
+        android:layout_width="690dp"
+        android:layout_height="362dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="1"
+        android:background="@color/colorgreen"
+        android:hint="Please Enter Reason if Other"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/Submit_reason_btn"
+        android:layout_width="690dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:text="Submit"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

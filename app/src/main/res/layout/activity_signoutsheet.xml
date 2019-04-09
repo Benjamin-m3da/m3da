@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".signoutsheet">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/colorAccent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/codamlogo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:text="CODAM  CREW Sign Of Sheet"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPrintName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:gravity="center_horizontal"
+                android:text="Print Name"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewSignature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:gravity="center_horizontal"
+                android:text="Signature"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:gravity="center_horizontal"
+                android:text="Date"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:gravity="center_horizontal"
+                android:text="Time"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/textViewPrintName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/common_google_signin_btn_text_dark_default"
+                android:gravity="center_horizontal"
+                android:text="Print Name"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="28sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/textViewSignature1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/common_google_signin_btn_text_dark_default"
+                android:gravity="center_horizontal"
+                android:text="Signature"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/textViewDate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/common_google_signin_btn_text_dark_pressed"
+                android:gravity="center_horizontal"
+                android:text="Date"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/textViewTime1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/common_google_signin_btn_text_dark_default"
+                android:gravity="center_horizontal"
+                android:text="Time"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
