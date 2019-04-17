@@ -59,6 +59,10 @@ import java.util.Date;
     Button savesig, clearsig;
     Context context;
 
+    String my_name;
+
+    String holiday_request_type;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,9 +91,10 @@ import java.util.Date;
             public void onClick(View v) {
                 //set up dialog
 
+                //Type //Name you called thae memory space you just created
                 Dialog dialog = new Dialog(holiday_request.this);
                 dialog.setContentView(R.layout.reason_if_other_holidayrequest_dialog);
-                Submit_reason_btn = (Button) dialog.findViewById(R.id.Submit_reason_btn);
+                Button Submit_reason_btn = (Button) dialog.findViewById(R.id.Submit_reason_btn);
                 dialog.setTitle("Other");
                 dialog.setCancelable(false);
                 dialog.show();
@@ -97,7 +102,9 @@ import java.util.Date;
                 Submit_reason_btn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
+                        String current_timestamp = getTimestampForFirebase();
+                        //Write this to Firebase after you have a timestamp
+                        //current_timestamp
 
 
                     }
@@ -182,6 +189,11 @@ import java.util.Date;
     }
 
 
+    public String getTimestampForFirebase() {
+        //Get timestamp as String and return it
+
+        return "";
+    }
 
     private void signaturepad(){
 

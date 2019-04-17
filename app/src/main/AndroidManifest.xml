@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".signoutsheet"></activity>
+        <activity android:name=".Incident_report_2"></activity>
+        <activity android:name=".incident_report" />
+        <activity android:name=".signoutsheet" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
